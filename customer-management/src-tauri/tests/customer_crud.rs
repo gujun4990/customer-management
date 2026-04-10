@@ -9,7 +9,7 @@ fn seeded_user_credentials() -> customer_management_lib::auth::StoredUserCredent
     customer_management_lib::auth::StoredUserCredentials {
         id: "user-alice".into(),
         username: "alice".into(),
-        password_hash: "pbkdf2_sha256$100000$seed-alice-salt$5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8".into(),
+        password_hash: "pbkdf2_sha256$100000$seed-alice-salt$230ff9a22428019bcb02da4f93400a54c327fa51c672965ff2da262a9185f4d7".into(),
         is_admin: false,
     }
 }
@@ -233,7 +233,7 @@ fn seeded_other_user_credentials() -> customer_management_lib::auth::StoredUserC
     customer_management_lib::auth::StoredUserCredentials {
         id: "user-bob".into(),
         username: "bob".into(),
-        password_hash: "pbkdf2_sha256$100000$seed-bob-salt$d033e22ae348aeb5660fc2140aec35850c4da997".into(),
+        password_hash: "pbkdf2_sha256$100000$seed-bob-salt$d3bf3e6ea06f66baf882c79abd47322ed4b928521ba771079b8d602a6b1a974a".into(),
         is_admin: false,
     }
 }

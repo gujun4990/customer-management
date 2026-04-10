@@ -2,8 +2,8 @@ INSERT INTO users (id, username, password_hash, is_admin)
 VALUES
     ('user-admin', 'admin', 'pbkdf2_sha256$100000$seed-admin-salt$763c1c0d50e9f82b2c3540702bc019df7137c0447de9763e7dc60c4151dfde64', TRUE),
     ('user-sales', 'sales', 'pbkdf2_sha256$100000$seed-sales-salt$cafbf78a677e5928bfa165b38325fc3d73ed9f86ece7868ce9bb3be3dc78d5c8', FALSE),
-    ('user-alice', 'alice', 'pbkdf2_sha256$100000$seed-alice-salt$5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', FALSE),
-    ('user-bob', 'bob', 'pbkdf2_sha256$100000$seed-bob-salt$d033e22ae348aeb5660fc2140aec35850c4da997', FALSE)
+    ('user-alice', 'alice', 'pbkdf2_sha256$100000$seed-alice-salt$230ff9a22428019bcb02da4f93400a54c327fa51c672965ff2da262a9185f4d7', FALSE),
+    ('user-bob', 'bob', 'pbkdf2_sha256$100000$seed-bob-salt$d3bf3e6ea06f66baf882c79abd47322ed4b928521ba771079b8d602a6b1a974a', FALSE)
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO leads (id, name, phone, company, email, notes, address, owner_id, status)
