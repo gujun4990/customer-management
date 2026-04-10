@@ -93,6 +93,7 @@ The system comes with seeded users:
 | Username | Password | Role   |
 |----------|----------|--------|
 | admin    | admin123 | Admin  |
+| sales    | sales123 | User   |
 | alice    | alice123 | User   |
 | bob      | bob123   | User   |
 
