@@ -174,8 +174,9 @@ jobs:
         with:
           name: ${{ matrix.artifact_name }}
           path: |
-            customer-management/src-tauri/target/release/bundle/**/*.msi
-            customer-management/src-tauri/target/release/bundle/**/*.dmg
-            customer-management/src-tauri/target/release/bundle/**/*.app.tar.gz
             customer-management/src-tauri/target/release/bundle/**/*.deb
+            customer-management/src-tauri/target/release/bundle/**/*.rpm
+            customer-management/src-tauri/target/release/bundle/**/*.AppImage
+            customer-management/src-tauri/target/release/bundle/**/*.dmg
+            customer-management/src-tauri/target/release/bundle/**/*.msi
           if-no-files-found: ignore
